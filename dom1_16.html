@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="name">pradumn</p>
+    <p class="home">koiriyapar</p>
+    <p class="home">koiriyapar,mau</p>
+    <p class="home">koiriyapar,mau,uttar pradesh</p>
+
+    <ul>
+        <li>love</li>
+        <li>you</li>
+        <li>all</li>
+    </ul>
+  <!-- how to access children of body -->
+    <script>
+        var child=document.body.children;
+        console.log(child);
+    </script>
+    <!-- add new child in a body -->
+    <script>
+        var para=document.createElement("p");
+        var text=document.createTextNode("welcom to india");
+        para.appendChild(text);
+        console.log(para);
+        document.body.appendChild(para);
+    </script>
+    
+</body>
+</html>
