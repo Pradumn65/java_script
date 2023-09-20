@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- the location object contains infromation about the current  url. the location onject is the part of window object and is accessed through the window.location property
+    
+    wnindow.location.href
+    return url of current page
+
+    window.location.hostname
+    return name of internet host name of current page
+
+    window.location.pathname
+    return pathname
+
+    window.location.protocol 
+    return web protocol
+
+    window.location.assign() method load the new document -->
+
+    <br><br>
+
+    <button onclick="myfun()">click me</button>
+    <br><br>
+
+    <script>
+        document.write(window.location.href);
+        document.write("<br>");
+        document.write(window.location.hostname);
+        document.write("<br>");
+        document.write(window.location.protocol);
+
+        function myfun()
+        {
+
+             window.location.assign("https://www.youtube.com/watch?v=ecWxI0_UfAA&t=497s");
+
+            // window.location="https://www.youtube.com/watch?v=ecWxI0_UfAA&t=497s";
+        }
+
+    </script>
+
+</body>
+</html>
