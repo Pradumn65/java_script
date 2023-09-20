@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>enter your choice</h2>
+    <ul>
+        <li>add</li>
+        <li>sub</li>
+        <li>mult</li>
+    </ul>
+
+    <br>
+
+    <form action="">
+       <input type="text" id="choice">
+       <br>
+       <button onclick="myfun()">click</button>
+    </form>
+    
+    <script>
+        // switch statement --> statement is used to select one of many blocks of code to be executed 
+        
+        function myfun(){
+            var operation=document.getElementById("choice").value;
+            
+          var a=50;
+          var b=10;
+
+          switch(operation)
+           {
+             case "add":
+                c=a+b;
+                document.write(c);
+                break;
+             case "sub":
+                d=a-b;
+                document.write(d);
+                break;
+             case "mult":
+                e=a*b;
+                document.write(e);
+                break;
+             default:
+                document.write("invalid input");           
+            }
+
+        }
+       
+       
+           
+    </script>
+    
+</body>
+</html>
