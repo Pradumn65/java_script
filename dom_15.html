@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p id="name">pradumn chauhan</p>
+   <p class="state">uttar pradesh</p>
+   <p class="state">maharastra</p>
+   <h1>hi this is pradumn</h1>
+
+   <!-- access element by id -->
+   <script>
+     var a=document.getElementById("name").innerHTML;
+     document.write(a);
+   </script>
+<br>
+<br>
+<!-- access element by class -->
+   <script>
+      var b= document.getElementsByClassName("state")[1].innerHTML;
+      document.write(b);
+   </script>
+<br><br>
+
+<!-- access element by tagname -->
+   <script>
+    var c=document.getElementsByTagName("p");
+    document.write(c);
+    console.log(c);
+   </script>
+   <br><br>
+   <!-- how to access first element  -->
+   <script>
+    var d=document.querySelector("p").innerHTML;
+     document.write(d);
+   </script>
+    
+</body>
+</html>
