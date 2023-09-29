@@ -1,0 +1,66 @@
+<!-- username:
+condition{
+    1. not empty
+    2. not less than 3
+    3. not more than 20
+    4. number,special character show error 
+} -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="" onsubmit="return myfun()">
+        USERNAME:<input type="text" id="username" value="">
+        <span id="message"></span>
+         <br><br>
+        <button type="submit" value="Submit">submit</button>
+    </form>
+    
+    <script>
+
+        function myfun(){
+            var correct_way=/^[A-Za-z]+$/;
+            var a=document.getElementById("username").value;
+
+        if(a=="")
+        {
+            document.getElementById("message").innerHTML="** please fill username";
+            return false;
+
+        }
+        
+        if(a.length<3)
+        {
+            document.getElementById("message").innerHTML="** username must be three character";
+            return false;
+        }
+
+        if(a.length>20)
+        {
+            document.getElementById("message").innerHTML="** username should not more than 20 character";
+            return false;
+        }
+
+        if(a.match(correct_way))
+        {
+            return true;
+        }
+        else
+        {
+            document.getElementById("message").innerHTML="** only alphabets are allowed";
+            return false;
+        }
+
+        }
+        
+    </script>
+
+         
+</body>
+</html>
