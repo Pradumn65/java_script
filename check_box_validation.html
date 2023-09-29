@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+    <h1 style="color: blue; text-align: center;">Radio button validation in javascript</h1>
+    <br>
+    <h2>Select your branch</h2>
+  <form name="forms" action="" onsubmit="return myfun()" >
+        <input type="radio" name="cs" id="" >
+    <label for="">computer science</label>
+    <br><br>
+    
+    <input type="radio" name="cs" id="">
+    <label for="">Atificial inteligence</label>
+    <br><br>
+    
+    <input type="radio" name="cs" id="">
+    <label for="">Data science</label>
+    <br><br>
+    <div><span id="message" style="color: red;"></span></div>
+    <br>
+
+    <input type="submit" value="submit">
+  </form>
+    
+    
+    <script>
+
+    function myfun(){
+       var a=document.forms.cs;
+        for( var i=0;i<a.length;i++)
+        {
+            if(a[i].checked==true)
+            {
+                return true;
+            }
+        } 
+
+        document.getElementById("message").innerHTML="** please select anyone";
+        return false;
+    }
+        
+    </script>
+
+</body>
+</html>
